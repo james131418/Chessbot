@@ -1,0 +1,1225 @@
+<?xml version="1.0" ?>
+<sdf version="1.4">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <model name="chessboard">
+	<pose>0.338503 0.280987 0.7798 0 0 -1.570801</pose>
+	<static>true</static>
+        <link name="body">
+	    <gravity>false</gravity>
+	    <collision name="collision">
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/chessboard.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+		<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/chessboard.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+        </link>
+    </model>
+    <model name="castle_b_a">
+		<pose>0.39 -0.194 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Castle_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Castle_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="castle_w_a">
+		<pose>0.813 -0.194 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Castle_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Castle_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="castle_b_h">
+		<pose>0.390 0.228 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Castle_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Castle_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="castle_w_h">
+		<pose>0.813 0.228 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Castle_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Castle_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="knight_b_b">
+		<pose>0.39 -0.134 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Knight_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Knight_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="knight_w_b">
+		<pose>0.813 -0.134 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Knight_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Knight_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="knight_b_g">
+		<pose>0.39 0.168 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Knight_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Knight_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="knight_w_g">
+		<pose>0.813 0.168 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Knight_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Knight_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="bishop_b_c">
+		<pose>0.39 -0.0734 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Bishop_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Bishop_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="bishop_w_c">
+		<pose>0.813 -0.0734 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Bishop_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Bishop_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="bishop_b_f">
+		<pose>0.39 0.107 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Bishop_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Bishop_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="bishop_w_f">
+		<pose>0.813 0.107 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Bishop_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Bishop_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="queen_w_">
+		<pose>0.813 -0.0131 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Queen_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Queen_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="queen_b_">
+		<pose>0.39 -0.0131 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Queen_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Queen_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="king_w_">
+		<pose>0.813 0.0471 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/King_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/King_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="king_b_">
+		<pose>0.39 0.0471 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/King_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/King_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_w_a">
+		<pose>0.753 -0.194 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_w_b">
+		<pose>0.753 -0.134 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_w_c">
+		<pose>0.753 -0.0734 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_w_d">
+		<pose>0.753 -0.0131 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_w_e">
+		<pose>0.753 0.0471 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_w_f">
+		<pose>0.753 0.107 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_w_g">
+		<pose>0.753 0.168 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_w_h">
+		<pose>0.753 0.228 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_w.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_b_a">
+		<pose>0.450 -0.194 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_b_b">
+		<pose>0.450 -0.134 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_b_c">
+		<pose>0.450 -0.0734 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_b_d">
+		<pose>0.450 -0.0131 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_b_e">
+		<pose>0.450 0.0471 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_b_f">
+		<pose>0.450 0.107 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_b_g">
+		<pose>0.450 0.168 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+	<model name="pawn_b_h">
+		<pose>0.450 0.228 0.788 0 0 0</pose>
+		<static>false</static>
+        <link name="body">
+	    	<gravity>true</gravity>
+			<kinematic>true</kinematic>
+			<collision name="collision">
+                <geometry>
+                    <mesh>
+						<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+						<scale>0.06 0.06 0.06</scale>
+					</mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+				<cast_shadows>false</cast_shadows>
+                <geometry>
+                    <mesh>
+			<uri>/home/js4768/baxter_example_ws/src/chess_bot/objects/Pawn_b.dae</uri>
+			<scale>0.06 0.06 0.06</scale>
+		    </mesh>
+                </geometry>
+            </visual>
+            <inertial>
+				<pose>0 0 0.018 0 0 0</pose>
+				<mass>0.001</mass>
+				<inertia>
+					<ixx>0.0000001667</ixx>
+					<ixy>0.0</ixy>
+					<ixz>0.0</ixz>
+					<iyy>0.0000001667</iyy>
+					<iyz>0.0</iyz>
+					<izz>0.0000001667</izz>
+				</inertia>
+			</inertial>
+        </link>
+    </model>
+    <physics type="ode">
+      <real_time_update_rate>1000.0</real_time_update_rate>
+      <gravity>
+		0.0 0.0 -9.81
+      </gravity>
+    </physics>
+  </world>
+</sdf>
