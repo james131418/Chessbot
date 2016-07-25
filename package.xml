@@ -46,8 +46,7 @@
   <run_depend>message_runtime</run_depend>
   <run_depend>rospy</run_depend>
   <run_depend>std_msgs</run_depend>
-  <img width="726" alt="chexter" src="https://cloud.githubusercontent.com/assets/18408973/17112918/1d3c882c-5276-11e6-81fc-f09d185c3af8.png">
-
+  
 
   <!-- The export tag contains other, unspecified, tags -->
   <export>
