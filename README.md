@@ -17,3 +17,5 @@ Run 'python chess_connecter.py' in /src folder to run chess engine and play in G
 Usage:
 When prompt "Enter move:", type a UCI move (eg. e2e4, b3c2) to issue a move command. Type "exit" to exit the chess game. Type "reset" to start a new game.
 To start a new game, you need to shutdown gazebo and chess connecter and restart them all.
+
+<img width="726" alt="chexter" src="https://cloud.githubusercontent.com/assets/18408973/17112918/1d3c882c-5276-11e6-81fc-f09d185c3af8.png">
